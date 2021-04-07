@@ -1,8 +1,7 @@
 import React from 'react'
-import Layout from '../../components/layout'
 import Article from '../../components/Article'
 
-const  article_1 = () => {
+const  article2 = () => {
   return (
     <Article
       title="The second article."
@@ -11,4 +10,4 @@ const  article_1 = () => {
   )
 }
 
-export default article_1
+export default article2
