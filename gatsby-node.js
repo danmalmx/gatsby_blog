@@ -13,7 +13,7 @@ const articles = [
   {id: 3, title: 'The third title', content: 'The third conent' },
 ]
 
-exports.createPages = async ({actions: { createPage } }) => {
+exports.createPages = async ({actions: { createPage }, graphql }) => {
   articles.forEach(({id, title, content}) => {
     createPage({
       path: `/articles/${id}`,
