@@ -11,10 +11,12 @@ const IndexPage = ({ data }) => {
     <Layout>
       <SEO title="Home" />
       {data.allStrapiArticle.nodes.map(article =>
-        <div>
-          <h2>{article.title}</h2>
-          <p>{article.content}</p>
-        </div>
+        <Link to={`/articles/strapi/${article.id}`}>
+          <div>
+            <h2>{article.title}</h2>
+            <p>{article.content}</p>
+          </div>
+        </Link>
         )}
 
     </Layout>
